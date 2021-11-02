@@ -1,0 +1,17 @@
+######## Install Nginx on my VM 
+apt update
+apt install nginx 
+systecctl status nginx
+
+####### Git configuration
+git config --global user.name "user name"
+git config --global user.email "user email"
+git config --global --list
+git clone git@github.com:"your git repo"
+
+##### Using Cron - system daemon 
+##### CRONJOB github
+crontab -e (open cronfile for an active user )
+*/1 * * * * cd /git/material-design-template/educational-attempts && git pull origin master
+crontab -l (Displaying the contents of the current user's schedule ) 
+
